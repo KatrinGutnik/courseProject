@@ -1,0 +1,159 @@
+body{
+    width: 1440px;
+    height: 1230px;
+    background: url("img/Bg blur.png");
+}
+.wrapper{
+    width: 644px;
+    height: 861px;
+    /*margin: 0 auto;*/
+    margin-top: 57px;
+    margin-left: 398px;
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+}
+form * {
+    outline: none;
+}
+.form{
+    width: 464px;
+    height: 670px;
+    position: relative;
+    margin: 90px auto;
+}
+.form__body{
+    position: relative;
+}
+.form__body::after{
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    width: 644px;
+    height: 712px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.form__body._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+.form__title{
+    display: flex;
+    justify-content: center;
+    width: 377px;
+    height: 70px;
+    text-align: center;
+    font-family: 'Chillax';
+    font-style: normal;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: #000000;
+    font-size: 50px;
+    margin: 0px auto;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+h1{
+    margin-top: 0px;
+}
+.colortext{
+    color: #FF6363;
+    margin-left: 10px;
+}
+.form__body input {
+    margin: 22px auto;
+    width: 460px;
+    height: 71px;
+    background: #E9EEF8;
+    border-radius: 14px;
+    border: none;
+}
+.form__item{
+    margin: 24px auto;
+    width: 464px;
+    height: 117px;
+}
+#formPassword {
+    height: 134px;
+}
+.form__label{
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    width: 224px;
+    height: 27px;
+    padding-top: 0px;
+}
+.form__label>h3{
+    margin: 0 auto;
+    font-family: 'Plus Jakarta Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 140%;
+    color: #000000;
+    letter-spacing: ;
+}
+input{
+    padding-left: 24px;
+    font-family: 'Plus Jakarta Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: black;
+    left: 24px;
+    top: 24px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+::placeholder{
+    color: #939393;
+}
+.form__input:focus{
+    box-shadow: 0 0 15px grey;
+}
+.button{
+    width: 381px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    margin: 124px auto;
+
+}
+.btn1{
+    width: 165px;
+    height: 54px;
+    border: 2px solid #5B4DFF;
+    border-radius: 44px;
+    /*left: 1225px; /*1168*/
+}
+.btn1>a{
+    text-decoration: none;
+    color: #5B4DFF;
+    font-family: 'Plus Jakarta Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+}
+.btn2{
+    width: 166px;
+    height: 54px;
+    border: 2px solid #5B4DFF;
+    background-color: #5B4DFF;
+    border-radius: 44px;
+    margin-left: 56px;
+
+}
+.btn2>a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Plus Jakarta Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+}
